@@ -27,39 +27,50 @@ namespace hlx_launcher
             InitializeComponent();
         }
 
-        private void minimizeWindowBtn(object sender, RoutedEventArgs e)
+        private void windowDrag(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void minimizeAppButton(object sender, RoutedEventArgs e)
         {
             Window mainWindow = Application.Current.MainWindow;
             mainWindow.WindowState = WindowState.Minimized;
         }
 
-        private void exitWindowBtn(object sender, RoutedEventArgs e)
+        private void exitAppButton(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
+
+        /*
         private void playButtonBtn(object sender, RoutedEventArgs e)
         {
             RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Valve\\Steam");
             if (key != null)
-            {
-                string steamPath = key.GetValue("SteamPath").ToString();
-                outputTextBlock.Text += "Steam path:\n" + steamPath + "\n" + "Launching steam.exe\n\n";
+        {
+        string steamPath = key.GetValue("SteamPath").ToString();
+        outputTextBlock.Text += "Steam path:\n" + steamPath + "\n" + "Launching steam.exe\n\n";
 
-                string steamExePath = steamPath + "\\Steam.exe";
+        string steamExePath = steamPath + "\\Steam.exe";
 
-                if (System.IO.File.Exists(steamExePath))
-                {
-                    Process.Start(steamExePath);
-                }
-                else
-                {
-                    outputTextBlock.Text += "Steam.exe is not found.\n\n";
-                }
-            }
-            else
-            {
-                outputTextBlock.Text += "Steam is not installed or not found.\n\n";
-            }
+        if (System.IO.File.Exists(steamExePath))
+        {
+          Process.Start(steamExePath);
         }
+        else
+        {
+          outputTextBlock.Text += "Steam.exe is not found.\n\n";
+        }
+        }
+        else
+        {
+            outputTextBlock.Text += "Steam is not installed or not found.\n\n";
+        }
+        }
+        */
     }
 }

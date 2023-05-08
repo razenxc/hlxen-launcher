@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:hlx_launcher"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        
     </Application.Resources>
 </Application>

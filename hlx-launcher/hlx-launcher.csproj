@@ -11,13 +11,25 @@
   <ItemGroup>
     <None Remove="Resources\icons\hl1.png" />
     <None Remove="Resources\icons\hl2.png" />
+    <None Remove="Resources\icons\ui\close.png" />
+    <None Remove="Resources\icons\ui\gear.png" />
+    <None Remove="Resources\icons\ui\home.png" />
+    <None Remove="Resources\icons\ui\minimize.png" />
     <None Remove="Resources\logo.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Resources\icons\hl1.png" />
     <Resource Include="Resources\icons\hl2.png" />
+    <Resource Include="Resources\icons\ui\close.png" />
+    <Resource Include="Resources\icons\ui\gear.png" />
+    <Resource Include="Resources\icons\ui\home.png" />
+    <Resource Include="Resources\icons\ui\minimize.png" />
     <Resource Include="Resources\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\fonts\" />
   </ItemGroup>
 
 </Project>
