@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>hlx_launcher</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\icons\hl1.png" />
+    <None Remove="Resources\icons\hl2.png" />
+    <None Remove="Resources\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\icons\hl1.png" />
+    <Resource Include="Resources\icons\hl2.png" />
+    <Resource Include="Resources\logo.png" />
+  </ItemGroup>
+
+</Project>
