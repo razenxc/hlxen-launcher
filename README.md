@@ -1,3 +1,9 @@
+![image](https://img.shields.io/github/last-commit/razenxc/hlxen-launcher)
+![image](https://img.shields.io/github/release-date-pre/razenxc/hlxen-launcher)
+![image](https://img.shields.io/github/languages/code-size/razenxc/hlxen-launcher)
+![image](https://img.shields.io/github/downloads/razenxc/hlxen-launcher/total)
+![image](https://img.shields.io/github/stars/razenxc/hlxen-launcher?style=social)
+
 # hlxen-launcher
 This launcher will be for launching all regular versions of Half Life, for launching mods from Steam, for launching mods from moddb, for accessing SDK for each part of Half -Life...
 ## Latest version screenshot
